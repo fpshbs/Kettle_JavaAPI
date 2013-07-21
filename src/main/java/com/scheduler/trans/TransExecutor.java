@@ -32,9 +32,11 @@ public class TransExecutor {
 		}
 	}
 	
+	
 	public static void main(String []args){
 		String fileName = "_hello.ktr"; 
-		new TransExecutor().runTrans(fileName);
+		System.out.println("--" + TransExecutor.class.getClassLoader().getResource("_hello.ktr"));
+//		new TransExecutor().runTrans(fileName);
 	}
 
 }
